@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Square } from './Square';
 import { SquareOpponent } from './SquareOpponent'
+import { SocketContext } from './context/socket';
 
 export var shipSelected = true;
 export var shipOrient = true;
