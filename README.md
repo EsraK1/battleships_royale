@@ -1,4 +1,9 @@
 # battleships_royale
+
+WEBSITE USED TO CONNECT TO SOCKET IO
+https://www.ultimateakash.com/blog-details/IiwzRGAKYAo=/How-to-Integrate-Socket.IO-with-React-2021
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
