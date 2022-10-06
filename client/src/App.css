@@ -49,11 +49,11 @@ margin: auto
 
 @keyframes boom {
   0% {
-    background-color: red;
+    background: red;
   }
 
   100% {
-    background-color: peru;
+    background: peru;
   }
 }
 

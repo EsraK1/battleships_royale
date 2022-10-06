@@ -50,7 +50,7 @@ export class Square extends React.Component {
       //places horizontal ships
       //if ship is size 2, the next .map iteration selects the square property as ship too
       // ~so on for size 3 and 4 and their iterations respectively
-      if (shipOrient === 'horizontal'){
+      if (shipOrient === 'horizontal' && shipSelected !== ''){
         var newPlay1Grid = this.props.play1Grid.map((square, i) => {
           if(this.props.index === i && (shipSelected === 'ship1'|| shipSelected === 'ship2' || shipSelected === 'ship3'|| shipSelected === 'ship4')){
             return {
@@ -124,6 +124,6 @@ export class Square extends React.Component {
 
   render(){
     return(
-      <div className={`player square ${this.props.square.shipStatus}`} id={`play1_square_${this.props.index}`} key={`square_${this.props.index}`} onClick={() => {this.handleClick()}}> </div>
+      <div className={`player square ${this.props.square.shipStatus} ${this.props.square.hitStatus}`} id={`play1_square_${this.props.index}`} key={`square_${this.props.index}`} onClick={() => {this.handleClick()}}> </div>
   )
 }}

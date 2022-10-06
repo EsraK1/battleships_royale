@@ -36,7 +36,7 @@ export function GameFlow(props) {
         <h1>Your Board</h1>
         <div className="player2 board" id="GameContainer2">
           {props.play1Grid.map( // maps through the array and makes a square for each of the elements in the array.
-            (square, index) => (<SquareOpponent square={square} key={`player2Board_${index}`} index={index} gridArray={props.play1Grid} setGridArray={props.setPlay1Grid} setTurnState={setTurnState} turnState={turnState}/>) // these 'tags' of square and index pass into the 'props' within the Square class component
+            (square, index) => (<Square square={square} key={`player2Board_${index}`} index={index} gridArray={props.play1Grid} setGridArray={props.setPlay1Grid} setTurnState={setTurnState} turnState={turnState}/>) // these 'tags' of square and index pass into the 'props' within the Square class component
             )}
         </div>
       </column>
